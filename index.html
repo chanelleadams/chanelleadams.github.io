@@ -3,11 +3,20 @@
 
 <head>
   <title>Chanelle Adams</title>
-  <link href="https://fonts.googleapis.com/css?family=Karla:400,400i" rel="stylesheet"
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <style>
 body {
-  font-family: "Karla"
+  font-family: "Karla";
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ddcba4+100 */
+background: #ffffff; /* Old browsers */
+
+background: linear-gradient(to bottom, #ffffff 0%,#ddcba4 167%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ddcba4',GradientType=0 ); /* IE6-9 */
+min-height: 100vh;
 }
 .social {
   float:right;
@@ -17,18 +26,67 @@ body {
   margin-top:0vh;
   margin-bottom: 5vh;
 }
+#writing {
+    height: Calc(100vh - 150px);
+    background: #fff;
+    box-shadow: 7px 2px 5px 0px rgba(136,176,75, .8);
+    padding:1em;
+    overflow-y: auto;
+}
+#writing h2 {
+  font-family: "Cormorant";
+  margin-bottom: 1em;
+}
+.current, .content li:hover {
+  text-decoration: underline;
+}
 </style>
 <body>
-
-  <h1>CHANELLE ADAMS</h1>
-  <p class="social">
-    <a href="https://twitter.com/nellienooks">  <img src="img/twitter.png" alt=""></a>
-    <p style="text-align:center;float:right;margin-top:70px;">twitter</p>
-
-  </p>
-  <h2  class="typewrite" data-period="2000" data-type='[ "is a writer and researcher based in Marseille.","this site is under construction" ]'>
+<main class="container-fluid">
+  <h1  class="typewrite" data-period="2000" data-type='[ "CHANELLE ADAMS" ]'>
     <span class="wrap"></span>
-  </h2>
+  </h1>
+  <hr>
+</hr>
+
+<div class="content">
+  <div class="col-md-2">
+    <ul>
+      <li class="current">Writing 1</li>
+      <li>Writing 2</li>
+      <li>Mixed Media</li>
+      <li>Interview</li>
+      <li>Review</li>
+      <li>et al. ;)</li>
+    </ul>
+  </div>
+  <div class="col-md-6 col-md-push-4 col-lg-5 col-lg-push-5">
+    <section id="writing">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center">Writing 1</h2>
+        </div>
+        <div class="col-md-6">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="col-md-6">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+      </div>
+
+    </section>
+  </div>
+  <div class="clearfix">
+
+  </div>
+
+</div>
+</main>
 
 
 
@@ -50,7 +108,7 @@ var TxtType = function(el, toRotate, period) {
       var fullTxt = this.toRotate[i];
 
       if (this.isDeleting) {
-      this.txt = fullTxt.substring(0, this.txt.length - 1);
+
       } else {
       this.txt = fullTxt.substring(0, this.txt.length + 1);
       }
@@ -65,15 +123,23 @@ var TxtType = function(el, toRotate, period) {
       if (!this.isDeleting && this.txt === fullTxt) {
       delta = this.period;
       this.isDeleting = true;
+
       } else if (this.isDeleting && this.txt === '') {
-      this.isDeleting = false;
-      this.loopNum++;
+
+
       delta = 500;
       }
 
-      setTimeout(function() {
+      var tOut = setTimeout(function() {
       that.tick();
       }, delta);
+
+      if (this.loopNum > 0) {
+        clearTimeout(tOut);
+
+      }
+
+
   };
 
   window.onload = function() {
