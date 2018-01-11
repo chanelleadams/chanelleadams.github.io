@@ -26,12 +26,14 @@ min-height: 100vh;
   margin-top:0vh;
   margin-bottom: 5vh;
 }
+
 #writing {
-    height: Calc(100vh - 150px);
+    max-height: Calc(100vh - 150px);
     background: #fff;
     box-shadow: 7px 2px 5px 0px rgba(136,176,75, .8);
     padding:1em;
     overflow-y: auto;
+    font-size:1.2em;
 }
 #writing h2 {
   font-family: "Cormorant";
@@ -39,6 +41,38 @@ min-height: 100vh;
 }
 .current, .content li:hover {
   text-decoration: underline;
+}
+.content nav {
+  display: flex;
+  justify-content:flex-end;
+}
+@media screen and (max-width: 992px) {
+  #writing {
+    font-size:2.2em;
+      max-height: Calc(100vh - 250px);
+      margin-top: 1em;
+
+  }
+  .typewrite {
+    text-align: center;
+    font-size:4em;
+  }
+  #writing h2 {
+
+    font-size:1.8em;
+  }
+  .content nav {
+    font-size:2.2em;
+    justify-content:center;
+
+  }
+  .content nav ul>li{
+    display: inline-block;
+    margin:6px;
+  }
+  .content nav ul{
+    padding: 0;
+  }
 }
 </style>
 <body>
@@ -50,19 +84,19 @@ min-height: 100vh;
 </hr>
 
 <div class="content">
-  <div class="col-md-2">
-    <ul>
-      <li class="current">Writing 1</li>
+  <nav class="col-md-2 ">
+    <ul class="">
+      <li class="current"> Writing 1</li>
       <li>Writing 2</li>
       <li>Mixed Media</li>
       <li>Interview</li>
       <li>Review</li>
       <li>et al. ;)</li>
     </ul>
-  </div>
-  <div class="col-md-6 col-md-push-4 col-lg-5 col-lg-push-5">
-    <section id="writing">
-      <div class="row">
+  </nav>
+  <div class=" col-md-6 col-md-push-4 ">
+    <section id="writing" class="row">
+      <div >
         <div class="col-md-12">
           <h2 class="text-center">Writing 1</h2>
         </div>
