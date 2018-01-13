@@ -7,167 +7,37 @@
   <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="main.css" rel="stylesheet">
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-<style>
-a{
-  color:#000
-}
-body {
-  font-family: "Karla";
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ddcba4+100 */
-background: #ffffff; /* Old browsers */
 
-background: linear-gradient(to bottom, #ffffff 0%,#ddcba4 167%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ddcba4',GradientType=0 ); /* IE6-9 */
-min-height: 100vh;
-}
-.social {
-  float:right;
-}
-.close-up-img img {
-
-  transition: all 0.67s;
-}
-.overflow-hidden {
-  overflow: hidden;
-}
-.close-up-img:hover img {
-
-  transform: scale(1.33);
-}
-.social img {
-  width:64px;
-  margin-top:0vh;
-  margin-bottom: 5vh;
-}
-.thesis-poster {
-  width: 100%
-}
-#writing {
-    min-height: 50vh;
-    max-height: Calc(100vh - 150px);
-    background: #fff;
-    box-shadow: 7px 2px 5px 0px rgba(136,176,75, .8);
-    box-shadow: 3px 11px 11px 0px rgba(136,176,75, .925);
-
-    padding-bottom: 3.5em;
-    overflow-y: auto;
-    font-size:1.2em;
-    display: flex;
-
-}
-.align-center {
-  align-self: center;
-}
-#writing>div{
-  display: flex;
-  flex-wrap: wrap;
-}
-#writing h2 {
-  font-family: "Cormorant";
-  margin-bottom: 1em;
-}
-.current, .content li:hover {
-  text-decoration: underline;
-}
-
-.content nav {
-  display: flex;
-  justify-content:flex-end;
-  font-size: 1.2em;
-
-}
-nav ul {
-      list-style: lower-roman;
-
-}
-nav ul>li {
-      text-align: justify;
-}
-.typewrite {
-
-  text-align: right;
-}
-.close-up-copy {
-  font-size: 1.33em;
-}
-.pnum {
-
-    position: absolute;
-    bottom: -6px;
-    right: 5px;
-    opacity: .5;
-}
-
-@media screen and (max-width: 992px) {
-  nav ul .current{
-        width:100%;
-        font-size: 3.1em;
-        line-height: 1.1;
-
-
-
-  }
-  #writing {
-    font-size:2.33em;
-      max-height: Calc(100vh - 650px);
-
-      margin: 1em 7px;
-box-shadow: none;
-background: transparent;
-
-  }
-  .typewrite {
-    text-align: center;
-    font-size:4em;
-  }
-  #writing h2 {
-
-    font-size:1.8em;
-  }
-  .content nav {
-    font-size:2.33em;
-    justify-content:center;
-
-  }
-  .content nav ul>li{
-    display: inline-block;
-    margin:6px;
-  }
-  .content nav ul{
-    padding: 0;
-
-  }
-}
-</style>
 <body>
 <main class="container-fluid">
   <h1  class="typewrite" data-period="2000" data-type='[ "CHANELLE ADAMS" ]'>
     <span class="wrap"></span>
   </h1>
-  <hr>
+  <hr class="main-hr">
 </hr>
 
 <div class="content">
   <nav class="col-md-2 ">
     <ul class="">
-      <li ><a href="/">CLOSE UP</a> </li>
-      <li class="current">COLONIALISM AND BOTANY</li>
+      <li ><a href="/">ABOUT</a> </li>
+      <li class="current"><a href="pharmacy.html">COLONIALISM AND BOTANY<a></li>
 
 
 
 
 
 
-      <li >CUT AND PASTE</li>
-      <li>CULTURAL CRITIQUE</li>
-      <li>CONVERSATIONS</li>
-      <li>CONTACT</li>
+      <li ><a href="cut-paste.html">CUT AND PASTE</a></li>
+      <li><a href="critique.html">CULTURAL CRITIQUE</a></li>
+      <li><a href="converse.html">CONVERSATIONS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
     </ul>
   </nav>
   <div class=" col-md-7 col-md-push-3 col-lg-6 col-lg-push-4">
@@ -175,16 +45,95 @@ background: transparent;
       <div >
         <div class="col-md-12">
 
-          <h2 class="text-center">  Colonialism and Botany</h2>
+          <h2 class="text-center hidden-sm">  Colonialism and Botany</h2>
         </div>
         <div class="col-md-12 align-center">
         <p class="close-up-copy">
-          Chanelle Adams approaches her research as a hybridization of history, the biological sciences, poetry and STS theory. During her undergraduate studies at Brown, she researched epistemologies of Malagasy healing with a focus on the circulation and use of plant materials i Madagascar. Chanelle launched a feminist web platform, Bluestockings magazine, after which she became Managing Editor at Black Girl Dangerous. In 2017 she accepted a Fulbright Fellowship and enrolled at the Ecole des hautes études en sciences sociales where she completed a Masters in comparative social sciences. Currently she is doing archival work in the herbarium of Marseille’s Colonial Museum with specific attention to the materials of Madagascar’s pharmacopoeia.
+          Chanelle Adams approaches her research as a hybridization of history, the biological sciences, poetry and STS theory. During her undergraduate studies at Brown, she researched epistemologies of Malagasy healing with a focus on the circulation and use of plant materials in Madagascar. Chanelle launched a feminist web platform, Bluestockings magazine, after which she became Managing Editor at Black Girl Dangerous. In 2017 she accepted a Fulbright Fellowship and enrolled at the Ecole des hautes études en sciences sociales where she completed a Masters in comparative social sciences. Currently she is doing archival work in the herbarium of Marseille’s Colonial Museum with specific attention to the materials of Madagascar’s pharmacopoeia.
 
         </p>
         <p>
-          <img src="img/poster.jpeg" alt="" class="thesis-poster">
+          <div class=" col-sm-8 col-sm-push-2 thesis-poster-container">
+            <img class="img-responsive" src="img/poster.jpeg" alt="" class="thesis-poster">
+          </div>
+
         </p>
+        <div class="clearfix">
+
+        </div>
+            <hr></hr>
+        <div class="col-2-flex">
+          <p class="close-up-copy col-md-5">
+            PUBLICATIONS
+
+          </p>
+          <p >
+            <ul class=" pub-list">
+              <li>
+              “Pharmacie gasy: The neocolonial insturmentalization of toxicity to discredit healing in Madagascar,” for The Funambulist issue on Toxic Atmospheres October, 2017.
+            </li>
+            <li>
+              “Devenir Materia Medica: le Musée colonial de Marseille, Dr. Heckel et la construction de la valeur des matériaux médico-botaniques malgaches (1893-1916),” Master’s Thesis, Program of Research in Comparative Social Sciences, Ecole des hautes études en sciences sociales, September 8, 2017.
+            </li>
+            <li>
+              “Epistemic Landscape Of Northern Madagascar Across Values and Meaning,” Honors Thesis, Program of Science & Technology Studies at Brown University, December 5, 2015.
+            </li>
+            </ul>
+          </p>
+
+
+        </div>
+        <hr></hr>
+        <div class="col-2-flex">
+          <p class="close-up-copy col-md-5">
+            SELECTED GRANTS & FELLOWSHIPS
+
+          </p>
+          <p >
+            <ul class=" pub-list">
+              <li>
+            Fulbright Grant Extension for Independent Research (Franco-American Commission) 			    2017
+          </li>
+            <li>
+              “Devenir Materia Medica: le Musée colonial de Marseille, Dr. Heckel et la construction de la valeur des matériaux médico-botaniques malgaches (1893-1916),” Master’s Thesis, Program of Research in Comparative Social Sciences, Ecole des hautes études en sciences sociales, September 8, 2017.
+            </li>
+            <li>
+              “Epistemic Landscape Of Northern Madagascar Across Values and Meaning,” Honors Thesis, Program of Science & Technology Studies at Brown University, December 5, 2015.
+            </li>
+            </ul>
+          </p>
+
+
+        </div>
+        <hr></hr>
+        <div class="col-2-flex">
+          <p class="close-up-copy col-md-5">
+            INVITED TALKS & PRESENTATIONS
+
+          </p>
+          <p>
+            <ul class=" pub-list">
+              <li>
+          “Paradise​ ​in​ ​Peril:​ ​​​The​ ​Moral​ ​Values​ ​of​ ​Environmental Conservation​ ​in​ ​Madagascar​ ​From​ ​1894​ ​to​ ​2017,” paper for “Moving Beyond Paternalism: Supplicants, Saviors and the Politics of Anti-Slavery and Anti-Trafficking in Africa” at the University of the Witwatersrand, Johannesburg, South Africa, November 29 to December 1, 2017.
+              </li>
+            <li>
+              “The politics of pharmacy-gasy in Madagascar,” recorded in Paris for The Funambulist Podcast on March 14, 2017.
+              </li>
+            <li>
+              “Epistemic Landscape Of Northern Madagascar Across Values and Meaning,” Honors Thesis, Program of Science & Technology Studies at Brown University, December 5, 2015.
+            </li>
+            <li>
+              “Gender, health, commodity, and trust: Marketplace of pharmacie gasy in Diego-Suarez, Madagascar,” presentation at Pembroke Center for Teaching and Research on Women, Brown University, June 2016.
+            </li>
+            <li>
+              “Researching With/Through Community: Cognitive justice for medico-botanical practitioners in Northern Madagascar” invited presentation for undergraduate Brown University Africana seminar “Activist Scholarship: Research and Writing for Social Change” at Brown University on March 14, 2016.
+            </li>
+            </ul>
+          </p>
+
+
+        </div>
+
         </div>
 
       <p class="pnum">i.</p>
