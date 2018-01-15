@@ -16,7 +16,7 @@ body {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ddcba4+100 */
 background: #ffffff; /* Old browsers */
 
-background: linear-gradient(to bottom, #ffffff 0%,#ddcba4 150%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: linear-gradient(to bottom, #ffffff 0%,#ddcba4 166%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ddcba4',GradientType=0 ); /* IE6-9 */
 min-height: 100vh;
 
@@ -71,7 +71,7 @@ nav li {
 }
 #writing {
     min-height: 40vh;
-    max-height: Calc(100vh - 172px);
+    max-height: Calc(100vh - 188px);
     background: #fff;
 
     box-shadow: 3px 11px 11px 0px rgba(136,176,75, 1);
@@ -82,7 +82,7 @@ nav li {
 
           padding: 1em;
     line-height: 1.5;
-    border: 1px solid rgba(0,0,0,.045);
+    border: 1px solid rgba(0,0,0,.05);
 border-bottom-width: 0;
 margin-right: 25px;
 
