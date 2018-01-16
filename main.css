@@ -54,8 +54,8 @@ a {
   color:#000 !important;
 }
 a.cv-link {
-  color: #999 !important;
-    font-size: 1.25em;
+  color: #F4512C !important;
+      font-size: 1.25em;
 }
 nav li {
     margin: 1em 0;
@@ -102,6 +102,7 @@ margin-right: 25px;
 font-family: "Karla";
 margin-bottom: 1em;
   font-size: 2em;
+  text-transform: uppercase;
   margin-top: 0;
 }
 
@@ -133,12 +134,13 @@ nav ul>li a {
       text-align: justify;
         font-size: 1.2em !important;
 }
-.typewrite {
+.typewrite,.main-name {
 text-align: left;
 margin-left: 40px;
 }
+
 .close-up-copy {
-  font-size: 1.5em;
+  font-size: 1.333em;
 
 }
 .pnum {
@@ -149,10 +151,10 @@ margin-left: 40px;
     opacity: .5;
 }
 .thesis-poster-container {
-  margin: 1.5em 0;
+  margin: 2.1em 0;
 }
 .col-2-flex .close-up-copy {
-  font-size: 1em;
+  font-size: 1.333em;
 }
 @media screen and (max-width: 768px) {
   .thesis-poster-container {
@@ -166,6 +168,16 @@ margin-left: 40px;
 
 
 @media screen and (max-width: 992px) {
+  .pnum {
+    display: hidden;
+  }
+  .thesis-poster-container {
+    width: 100% !important;
+    left:0 !important;
+  }
+  .thesis-poster-container img {
+    width: 100%
+  }
   body {
 
     background: linear-gradient(to bottom, #ffffff 0%,#ddcba4 250%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -200,6 +212,11 @@ margin-right: 0;
 
   }
   .typewrite {
+    text-align: center;
+    font-size:2em;
+    margin-left: 0;
+  }
+  .main-name {
     text-align: center;
     font-size:4em;
     margin-left: 0;

@@ -17,9 +17,13 @@
 
 <body>
 <main class="container-fluid">
-  <h1  class="typewrite" data-period="2000" data-type='[ "CHANELLE ADAMS" ]'>
-    <span class="wrap"></span>
+  <a href="/"> <h1  class="main-name" data-period="2000" data-type='[ "CHANELLE ADAMS" ]'>
+    <span class="wrap">CHANELLE ADAMS</span>
   </h1>
+  </a>
+  <h4  class="typewrite" data-period="2000" data-type='[ "writer | researcher | collaborator"]'>
+    <span class="wrap"></span>
+  </h4>
   <hr class="main-hr">
 </hr>
 
@@ -63,11 +67,11 @@
         </div>
             <hr></hr>
         <div class="col-2-flex">
-          <p class="close-up-copy col-md-5">
+          <div class="close-up-copy col-md-4">
             PUBLICATIONS
 
-          </p>
-          <p >
+          </div>
+          <div class="col-md-8">
             <ul class=" pub-list">
               <li>
               “Pharmacie gasy: The neocolonial insturmentalization of toxicity to discredit healing in Madagascar,” for The Funambulist issue on Toxic Atmospheres October, 2017.
@@ -79,17 +83,17 @@
               “Epistemic Landscape Of Northern Madagascar Across Values and Meaning,” Honors Thesis, Program of Science & Technology Studies at Brown University, December 5, 2015.
             </li>
             </ul>
-          </p>
+          </div>
 
 
         </div>
         <hr></hr>
         <div class="col-2-flex">
-          <p class="close-up-copy col-md-5">
+          <div class="close-up-copy col-md-4">
             SELECTED GRANTS & FELLOWSHIPS
 
-          </p>
-          <p >
+          </div>
+          <div class="col-md-8">
             <ul class=" pub-list">
               <li>
             Fulbright Grant Extension for Independent Research (Franco-American Commission) 			    2017
@@ -101,17 +105,17 @@
               “Epistemic Landscape Of Northern Madagascar Across Values and Meaning,” Honors Thesis, Program of Science & Technology Studies at Brown University, December 5, 2015.
             </li>
             </ul>
-          </p>
+          </div>
 
 
         </div>
         <hr></hr>
         <div class="col-2-flex">
-          <p class="close-up-copy col-md-5">
+          <div class="close-up-copy col-md-4">
             INVITED TALKS & PRESENTATIONS
 
-          </p>
-          <p>
+          </div>
+          <div class="col-md-8">
             <ul class=" pub-list">
               <li>
           “Paradise​ ​in​ ​Peril:​ ​​​The​ ​Moral​ ​Values​ ​of​ ​Environmental Conservation​ ​in​ ​Madagascar​ ​From​ ​1894​ ​to​ ​2017,” paper for “Moving Beyond Paternalism: Supplicants, Saviors and the Politics of Anti-Slavery and Anti-Trafficking in Africa” at the University of the Witwatersrand, Johannesburg, South Africa, November 29 to December 1, 2017.
@@ -129,14 +133,14 @@
               “Researching With/Through Community: Cognitive justice for medico-botanical practitioners in Northern Madagascar” invited presentation for undergraduate Brown University Africana seminar “Activist Scholarship: Research and Writing for Social Change” at Brown University on March 14, 2016.
             </li>
             </ul>
-          </p>
+          </div>
 
 
         </div>
 
         </div>
 
-      <p class="pnum">i.</p>
+      <p class="pnum">ii.</p>
       </div>
 
     </section>
@@ -176,7 +180,7 @@ var TxtType = function(el, toRotate, period) {
       this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
       var that = this;
-      var delta = 200 - Math.random() * 100;
+      var delta = 200 - Math.random() * 300;
 
       if (this.isDeleting) { delta /= 2; }
 

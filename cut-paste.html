@@ -17,9 +17,13 @@
 
 <body>
 <main class="container-fluid">
-  <h1  class="typewrite" data-period="2000" data-type='[ "CHANELLE ADAMS" ]'>
-    <span class="wrap"></span>
+  <a href="/"> <h1  class="main-name" data-period="2000" data-type='[ "CHANELLE ADAMS" ]'>
+    <span class="wrap">CHANELLE ADAMS</span>
   </h1>
+  </a>
+  <h4  class="typewrite" data-period="2000" data-type='[ "writer | researcher | collaborator"]'>
+    <span class="wrap"></span>
+  </h4>
   <hr class="main-hr">
 </hr>
 
@@ -59,7 +63,7 @@
              <img class="img-responsive" src="img/cp.png" alt="">
            </p>
 
-             <div class="col-md-7 pub-list">
+             <div class="col-md-7 close-up-copy">
             Multi-media visual and written art across themes of identity, place, and justice, published by formal and informal presses.
            </div>
 
@@ -74,7 +78,7 @@
 
         </div>
 
-      <p class="pnum">i.</p>
+      <p class="pnum">iii.</p>
       </div>
 
     </section>
@@ -114,7 +118,7 @@ var TxtType = function(el, toRotate, period) {
       this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
       var that = this;
-      var delta = 200 - Math.random() * 100;
+      var delta = 200 - Math.random() * 300;
 
       if (this.isDeleting) { delta /= 2; }
 
