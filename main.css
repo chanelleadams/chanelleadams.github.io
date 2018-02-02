@@ -21,6 +21,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 min-height: 100vh;
 
 }
+.fa-twitter {
+  float: right;
+  margin-top: -1.5em;
+  margin-right: 40px;
+  color:transparent;
+  text-shadow: 3px 3px 3px rgba(136,176,75, .75);
+
+}
+.fa-twitter:hover {
+
+    color:#578CA9
+}
 .social {
   float:right;
 }
@@ -71,7 +83,7 @@ nav li {
 }
 #writing {
     min-height: 40vh;
-    max-height: Calc(100vh - 188px);
+    max-height: Calc(100vh - 200px);
     background: #fff;
 
     box-shadow: 3px 11px 11px 0px rgba(136,176,75, 1);
@@ -80,7 +92,8 @@ nav li {
     overflow-y: auto;
     font-size:1.2em;
 
-          padding: 1em;
+          padding: 1.5em 1em;;
+
     line-height: 1.5;
     border: 1px solid rgba(0,0,0,.05);
 border-bottom-width: 0;
@@ -200,7 +213,7 @@ margin-left: 40px;
   }
   #writing {
     font-size:2.33em;
-      max-height: Calc(100vh - 420px);
+      max-height: Calc(100vh - 412px);
 box-shadow: none;
 padding: 0;
 background: transparent;
