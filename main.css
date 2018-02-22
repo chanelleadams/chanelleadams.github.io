@@ -29,6 +29,14 @@ min-height: 100vh;
   text-shadow: 3px 3px 3px rgba(136,176,75, .75);
 
 }
+.ex-link {
+  transition: all .33s;
+  text-decoration: underline;
+  opacity: .5;
+}
+.ex-link:hover {
+  opacity: 1;
+}
 .fa-twitter:hover {
 
     color:#578CA9
