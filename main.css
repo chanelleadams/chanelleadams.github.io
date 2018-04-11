@@ -261,7 +261,7 @@ padding: 0;
   }
   #writing {
     font-size:2.33em;
-      max-height: Calc(100vh - 412px);
+      max-height: Calc(100vh - 512px);
 box-shadow: none;
 padding: 0;
 background: transparent;
