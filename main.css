@@ -217,6 +217,10 @@ margin-left: 40px;
 
 
 @media screen and (max-width: 992px) {
+  .collage h3{
+    font-size:1.2em;
+    margin:1em 0;
+  }
   .collage {
 border-width:0;
 padding: 0;
