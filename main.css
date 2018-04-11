@@ -16,7 +16,7 @@ max-width: 100%;
 
 }
 .collage {
-  border: 2em #fff solid;
+  border: 1.5em #fff solid;
       padding: 14px;
       background: #000;
 }
@@ -25,7 +25,7 @@ max-width: 100%;
 }
 
 .collage-container {
-  padding: 0%;
+  padding: 1.75em;
   padding-top: 0;
   display: flex;
 flex-wrap: wrap;
