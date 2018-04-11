@@ -217,6 +217,9 @@ margin-left: 40px;
 
 
 @media screen and (max-width: 992px) {
+  .collage {
+border-width:0;
+}
   .collage-container {
       padding: 0;
   }
