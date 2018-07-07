@@ -244,7 +244,7 @@ nav ul > li a {
 
 @media screen and (max-width: 992px) {
   .typewrite {
-    padding-top:100px;
+    padding-top:120px;
   }
   .close-up-copy {
     font-size: 1.5em;
