@@ -64,10 +64,17 @@ body {
 }
 .fa-twitter {
   float: right;
-  margin-top: -1.5em;
+  margin-top: -1.25em;
   margin-right: 40px;
   color: transparent;
   text-shadow: 3px 3px 3px rgba(136, 176, 75, 0.75);
+}
+.cv-i {
+  float: right;
+  margin-top: -1.6em;
+  margin-right: 124px;
+  text-shadow: 3px 3px 3px rgba(136, 176, 75, 0.75);
+  color:transparent;
 }
 .ex-link {
   transition: all 0.33s;
@@ -77,8 +84,8 @@ body {
 .ex-link:hover {
   opacity: 1;
 }
-.fa-twitter:hover {
-  color: #578ca9;
+.fa-twitter:hover,.cv-i:hover {
+  color: #333;
 }
 .social {
   float: right;
@@ -205,6 +212,7 @@ nav ul > li a {
 .main-name {
   text-align: left;
   margin-left: 40px;
+  
 }
 
 .close-up-copy {
@@ -295,7 +303,7 @@ nav ul > li a {
     margin-right: 0;
   }
   .typewrite {
-    text-align: center;
+ 
     font-size: 2em;
     margin-left: 0;
   }
