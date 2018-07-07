@@ -142,8 +142,7 @@ nav li {
   padding-bottom: 3.5em;
   overflow-y: auto;
   font-size: 1.2em;
-
-  padding: 0;
+  
 
   line-height: 1.5;
 
@@ -244,6 +243,9 @@ nav ul > li a {
 }
 
 @media screen and (max-width: 992px) {
+  .typewrite {
+    padding-top:100px;
+  }
   .close-up-copy {
     font-size: 1.5em;
     margin-top: 0.5em;
@@ -301,6 +303,7 @@ nav ul > li a {
     border-left-width: 0;
     border-bottom-width: 0;
     margin-right: 0;
+ 
   }
   .typewrite {
  
