@@ -47,6 +47,7 @@ a {
 .col-2-flex {
   display: flex;
   align-items: stretch;
+  margin: 3em 0;
 }
 body {
   font-family: "Karla";
