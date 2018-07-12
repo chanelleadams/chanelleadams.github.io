@@ -137,7 +137,7 @@ nav li {
   max-height: Calc(100vh - 200px);
   background: rgba(255, 255, 255, 0.5);
 
-  box-shadow: 3px 11px 11px 0px rgba(136, 176, 75, 1);
+  box-shadow: 3px 11px 11px 0px rgba(136, 176, 75, .67);
   font-family: "Cormorant";
   padding-bottom: 3.5em;
   overflow-y: auto;
