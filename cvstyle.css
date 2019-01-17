@@ -1,6 +1,9 @@
 body, html, * {
     font-family: "Lora"
 }
+body {
+    background: #efebe9;
+}
 .card-header {
     background: transparent;
     font-size:.8rem;
@@ -27,4 +30,7 @@ body, html, * {
 }
 h5.card-title:first-of-type {
     margin-top:0 !important;
+}
+a {
+    color: #79b700 !important;
 }
