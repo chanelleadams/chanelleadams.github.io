@@ -1,0 +1,30 @@
+body, html, * {
+    font-family: "Lora"
+}
+.card-header {
+    background: transparent;
+    font-size:.8rem;
+  
+}
+
+.card-header a, .card-header,.card-header h5,.card-title {
+    font-family: "Karla" !important;
+    text-transform: uppercase;
+
+}
+.card-header h5 {
+    font-size:1.8rem;
+}
+.card-title {
+    font-size:1.5rem;
+}
+.accolade-name {
+    font-weight: 700;
+}
+.organization {
+    font-family: "Lora";
+    font-style: italic;
+}
+h5.card-title:first-of-type {
+    margin-top:0 !important;
+}

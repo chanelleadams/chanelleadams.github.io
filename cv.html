@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400i" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="cvstyle.css">
+    
+		<title>Chanelle Adams</title>
+	</head>
+	<body>
+      <div  id="cv" class="container">
+          <div class="row px-5">
+              <div class="col-12 card w-100 mt-5">
+                  <section class="card-header px-5">
+
+                      <h5 class="">Chanelle Adams</h5>
+                      <a href="mailto:contact.chanelleadams@gmail.com"></a>contact.chanelleadams@gmail.com
+                  </section>
+                 
+                  <div class="card-body d-flex flex-column text-right px-5">
+                    
+                    <p class="card-text text-right">
+                        <h5 class="card-title w-100">Education</h5>
+                      <div v-for="entry in education" class="education-container">
+                        
+                        <div>
+                          <span class="accolade-name">{{entry.gsx$title.$t}}</span>, <span class="description">{{entry.gsx$description.$t}}</span>
+                        </div>
+                        <p class="organization">{{entry.gsx$organization.$t}}</p>
+                  
+                      </div>
+                      <h5 class="card-title w-100 mt-5">Honors</h5>
+                      <div v-for="entry in honors" class="honors-container">
+                          <div>
+                            <span class="accolade-name">{{entry.gsx$title.$t}}</span>, <span class="description">{{entry.gsx$description.$t}}</span>
+                          </div>
+                          <p class="organization">{{entry.gsx$organization.$t}}</p>
+                    
+                        </div>
+
+                        <h5 class="card-title w-100 mt-5">Non-Fiction</h5>
+                      <div v-for="entry in nonFiction" class="non-fiction-container">
+                          <div>
+                            <span class="accolade-name">{{entry.gsx$title.$t}}</span>, <span class="description">{{entry.gsx$description.$t}}</span>for <a v-bind:href="entry.gsx$url.$t" target="_blank" class="organization">{{entry.gsx$organization.$t}}</a>
+                          </div>
+                    
+                    
+                        </div>
+
+                     
+                    </p>
+      
+                  </div>
+                  
+                </div>
+          </div>
+        </div>
+		<section>
+
+
+
+    </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+	</body>
+
+</html>
+
+<script>
+var sheetUrl = 'https://spreadsheets.google.com/feeds/list/1QRpSgNLcHRndunetM9g4gi-WV8DZOoHqdL2MIYIlroc/1/public/values?alt=json'
+
+var cv = new Vue({
+  el: '#cv',
+   
+  data: {
+        entries: null,
+        education: [],
+        honors:[],
+        nonFiction:[]
+    },
+   
+  watch: {
+        currentPage: 'fetchData'
+    },
+ 
+  created: function () {
+    this.fetchData()
+  },
+   
+  methods: {
+    fetchData: function () {
+      var xhr = new XMLHttpRequest()
+      var self = this
+      xhr.open('GET', sheetUrl )
+      xhr.onload = function () {        
+        self.entries = JSON.parse(xhr.responseText)
+
+        self.entries = self.entries.feed.entry  
+
+        //populate data arrays
+        self.entries.forEach(element => {
+          console.log(element.gsx$category.$t)
+          if (element.gsx$category.$t == "Education") {
+            self.education.push(element)
+    
+          }
+          if (element.gsx$category.$t == "Honors") {
+            self.honors.push(element)
+    
+          }
+          if (element.gsx$category.$t == "Non-Fiction") {
+            self.nonFiction.push(element)
+    
+          }
+       
+        });
+      }
+      xhr.send()
+    },
+//functions
+ 
+  },  
+   
+})
+
+</script>
