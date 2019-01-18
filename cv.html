@@ -14,7 +14,7 @@
       <div  id="cv" class="container">
           <div class="row">
               <div class="col-12 card w-100 mt-5">
-                  <section class="card-header px-5">
+                  <section class="card-header px-3">
 
                       <h5 class="">Chanelle Adams</h5>
                       <a href="mailto:contact.chanelleadams@gmail.com"></a>contact.chanelleadams@gmail.com
@@ -22,7 +22,7 @@
                  
                   <div class="card-body d-flex flex-column text-right px-5">
                     
-                    <p class="card-text text-right">
+                    <p class="card-text text-right px-2">
                         <h5 class="card-title w-100">Education</h5>
                       <div v-for="entry in education" class="education-container pt-3 px-2">
                         
@@ -32,7 +32,7 @@
                         <p class="organization">{{entry.gsx$organization.$t}}</p>
                   
                       </div>
-                      <h5 class="card-title w-100 mt-5 px-3">Honors</h5>
+                      <h5 class="card-title w-100 mt-5 px-2">Honors</h5>
                       <div v-for="entry in honors" class="honors-container pt-3 px-2">
                           <div class="d-flex">
                             <article class="mr-auto ">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> 
@@ -41,8 +41,8 @@
                     
                         </div>
 
-                        <h5 class="card-title w-100 mt-5">Non-Fiction</h5>
-                        <div v-for="entry in nonFiction" class="non-fiction-container py-2">
+                        <h5 class="card-title w-100 mt-5 px-2">Non-Fiction</h5>
+                        <div v-for="entry in nonFiction" class="non-fiction-container  pt-2 px-2">
                           <div class="d-flex pb-2">
                             <article class="mr-auto ">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> for <a v-bind:href="entry.gsx$url.$t" target="_blank" class="organization ml-1">{{entry.gsx$organization.$t}}</a>
                           </div>
@@ -50,8 +50,8 @@
                     
                         </div>
 
-                        <h5 class="card-title w-100 mt-5">Translation</h5>
-                        <div v-for="entry in translation" class="translation-container pt-3 px-2">
+                        <h5 class="card-title w-100 mt-5 px-2">Translation</h5>
+                        <div v-for="entry in translation" class="translation-container pt-2 px-2">
                           <div class="d-flex pb-2">
                             <article class="mr-auto ">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> for <a v-bind:href="entry.gsx$url.$t" target="_blank" class="organization ml-1">{{entry.gsx$organization.$t}}</a>
                           </div>
@@ -59,17 +59,17 @@
                     
                         </div>
 
-                        <h5 class="card-title w-100 mt-5 px-3">Invited Talks</h5>
-                      <div v-for="entry in talks" class="talks-container pt-3 px-2">
+                        <h5 class="card-title w-100 mt-5  px-2">Invited Talks</h5>
+                      <div v-for="entry in talks" class="talks-container pt-2 px-2">
                           <div class="d-flex">
                             <article class="mr-auto col-md-2 pl-0 text-left">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> 
                           </div>
-                          <p class="description my-1">{{entry.gsx$description.$t}}</p><p class="organization">{{entry.gsx$organization.$t}}</p>
+                          <p class="description ">{{entry.gsx$description.$t}}</p><p class="organization">{{entry.gsx$organization.$t}}</p>
                     
                         </div>
 
-                        <h5 class="card-title w-100 mt-5">Professional Experience</h5>
-                        <div v-for="entry in professionalExperience" class="non-fiction-container pt-3 px-2">
+                        <h5 class="card-title w-100 mt-5 px-2 pt-2">Professional Experience</h5>
+                        <div v-for="entry in professionalExperience" class="non-fiction-container pt-2 px-2">
                           <div class="d-flex pb-2">
                             <article class="mr-auto ">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}},</span> <a v-bind:href="entry.gsx$url.$t" target="_blank" class="organization ml-1">{{entry.gsx$organization.$t}}</a>
                           </div>

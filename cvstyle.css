@@ -35,7 +35,7 @@ h5.card-title:first-of-type {
 a {
     color: #79b700 !important;
 }
-.honors-container,.education-container,.non-fiction-container,.translation-conatainer,.talks-container {
+.honors-container,.education-container,.non-fiction-container,.translation-container,.talks-container {
     transition:background 333ms;
     border-radius: 10px;
     background:rgba(239,235,233, 0);
