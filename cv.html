@@ -42,19 +42,19 @@
                         </div>
 
                         <h5 class="card-title w-100 mt-5">Non-Fiction</h5>
-                        <div v-for="entry in nonFiction" class="non-fiction-container pt-3 px-2">
-                          <p class="d-flex">
+                        <div v-for="entry in nonFiction" class="non-fiction-container py-2">
+                          <div class="d-flex pb-2">
                             <article class="mr-auto ">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> for <a v-bind:href="entry.gsx$url.$t" target="_blank" class="organization ml-1">{{entry.gsx$organization.$t}}</a>
-                          </p>
+                          </div>
                     
                     
                         </div>
 
                         <h5 class="card-title w-100 mt-5">Translation</h5>
                         <div v-for="entry in translation" class="translation-container pt-3 px-2">
-                          <p class="d-flex">
+                          <div class="d-flex pb-2">
                             <article class="mr-auto ">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> for <a v-bind:href="entry.gsx$url.$t" target="_blank" class="organization ml-1">{{entry.gsx$organization.$t}}</a>
-                          </p>
+                          </div>
                     
                     
                         </div>
