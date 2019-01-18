@@ -2,8 +2,8 @@ body, html, * {
     font-family: "Lora"
 }
 body {
-    background: #efebe9;
-    font-size:1.25rem;
+    background: rgba(239,235,233, 1);
+    font-size:1.067rem;
 }
 .card-header {
     background: transparent;
@@ -35,3 +35,17 @@ h5.card-title:first-of-type {
 a {
     color: #79b700 !important;
 }
+.honors-container,.education-container,.non-fiction-container,.translation-conatainer,.talks-container {
+    transition:background 333ms;
+    border-radius: 10px;
+    background:rgba(239,235,233, 0);
+}
+
+.honors-container:hover,.education-container:hover,.non-fiction-container:hover,.translation-container:hover, .talks-container:hover {
+
+    background:rgba(239,235,233, .625);
+
+}
+
+
+

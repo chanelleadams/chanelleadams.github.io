@@ -12,11 +12,11 @@
 	</head>
 	<body>
       <div  id="cv" class="container">
-          <div class="row px-5">
+          <div class="row">
               <div class="col-12 card w-100 mt-5">
                   <section class="card-header px-5">
 
-                      <h5 class="">Chanelle Adams!</h5>
+                      <h5 class="">Chanelle Adams</h5>
                       <a href="mailto:contact.chanelleadams@gmail.com"></a>contact.chanelleadams@gmail.com
                   </section>
                  
@@ -24,27 +24,54 @@
                     
                     <p class="card-text text-right">
                         <h5 class="card-title w-100">Education</h5>
-                      <div v-for="entry in education" class="education-container">
+                      <div v-for="entry in education" class="education-container pt-3 px-2">
                         
-                        <div>
-                          <span class="accolade-name">{{entry.gsx$title.$t}}</span>, <span class="description">{{entry.gsx$description.$t}}</span>
+                        <div class="d-flex">
+                          <article class="mr-auto ">{{entry.gsx$date.$t}}</article> <span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> <span class="description">{{entry.gsx$description.$t}}</span>
                         </div>
                         <p class="organization">{{entry.gsx$organization.$t}}</p>
                   
                       </div>
-                      <h5 class="card-title w-100 mt-5">Honors</h5>
-                      <div v-for="entry in honors" class="honors-container">
-                          <div>
-                            <span class="accolade-name">{{entry.gsx$title.$t}}</span>, <span class="description">{{entry.gsx$description.$t}}</span>
+                      <h5 class="card-title w-100 mt-5 px-3">Honors</h5>
+                      <div v-for="entry in honors" class="honors-container pt-3 px-2">
+                          <div class="d-flex">
+                            <article class="mr-auto ">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> 
                           </div>
                           <p class="organization">{{entry.gsx$organization.$t}}</p>
                     
                         </div>
 
                         <h5 class="card-title w-100 mt-5">Non-Fiction</h5>
-                      <div v-for="entry in nonFiction" class="non-fiction-container">
-                          <div>
-                            <span class="accolade-name">{{entry.gsx$title.$t}}</span>, <span class="description">{{entry.gsx$description.$t}}</span>for <a v-bind:href="entry.gsx$url.$t" target="_blank" class="organization">{{entry.gsx$organization.$t}}</a>
+                        <div v-for="entry in nonFiction" class="non-fiction-container pt-3 px-2">
+                          <p class="d-flex">
+                            <article class="mr-auto ">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> for <a v-bind:href="entry.gsx$url.$t" target="_blank" class="organization ml-1">{{entry.gsx$organization.$t}}</a>
+                          </p>
+                    
+                    
+                        </div>
+
+                        <h5 class="card-title w-100 mt-5">Translation</h5>
+                        <div v-for="entry in translation" class="translation-container pt-3 px-2">
+                          <p class="d-flex">
+                            <article class="mr-auto ">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> for <a v-bind:href="entry.gsx$url.$t" target="_blank" class="organization ml-1">{{entry.gsx$organization.$t}}</a>
+                          </p>
+                    
+                    
+                        </div>
+
+                        <h5 class="card-title w-100 mt-5 px-3">Invited Talks</h5>
+                      <div v-for="entry in talks" class="talks-container pt-3 px-2">
+                          <div class="d-flex">
+                            <article class="mr-auto col-md-2 pl-0 text-left">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> 
+                          </div>
+                          <p class="description my-1">{{entry.gsx$description.$t}}</p><p class="organization">{{entry.gsx$organization.$t}}</p>
+                    
+                        </div>
+
+                        <h5 class="card-title w-100 mt-5">Professional Experience</h5>
+                        <div v-for="entry in professionalExperience" class="non-fiction-container pt-3 px-2">
+                          <div class="d-flex pb-2">
+                            <article class="mr-auto ">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}},</span> <a v-bind:href="entry.gsx$url.$t" target="_blank" class="organization ml-1">{{entry.gsx$organization.$t}}</a>
                           </div>
                     
                     
@@ -79,7 +106,10 @@ var cv = new Vue({
         entries: null,
         education: [],
         honors:[],
-        nonFiction:[]
+        nonFiction:[],
+        translation:[],
+        talks:[],
+        professionalExperience:[]
     },
    
   watch: {
@@ -103,16 +133,28 @@ var cv = new Vue({
         //populate data arrays
         self.entries.forEach(element => {
           console.log(element.gsx$category.$t)
-          if (element.gsx$category.$t == "Education") {
+          if (element.gsx$category.$t.toLowerCase().trim() == "education") {
             self.education.push(element)
     
           }
-          if (element.gsx$category.$t == "Honors") {
+          if (element.gsx$category.$t.toLowerCase().trim() == "honors") {
             self.honors.push(element)
     
           }
           if (element.gsx$category.$t == "Non-Fiction") {
             self.nonFiction.push(element)
+    
+          }
+          if (element.gsx$category.$t.toLowerCase().trim() == "translation") {
+            self.translation.push(element)
+    
+          }
+          if (element.gsx$category.$t.toLowerCase().trim() == "talks") {
+            self.talks.push(element)
+    
+          }
+          if (element.gsx$category.$t.toLowerCase().trim() == "professional") {
+            self.professionalExperience.push(element)
     
           }
        
