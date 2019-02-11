@@ -3,7 +3,6 @@ body, html, * {
 }
 body {
     background: rgba(239,235,233, 1);
-    font-size:1.067rem;
 }
 .card-header {
     background: transparent;
@@ -24,16 +23,17 @@ body {
 }
 .accolade-name {
     font-weight: 700;
+  
 }
 .organization {
     font-family: "Lora";
-    font-style: italic;
+
 }
 h5.card-title:first-of-type {
     margin-top:0 !important;
 }
 a {
-    color: #79b700 !important;
+    color: #006e6d !important;
 }
 .honors-container,.education-container,.non-fiction-container,.translation-container,.talks-container {
     transition:background 333ms;
@@ -48,4 +48,18 @@ a {
 }
 
 
-
+.description {
+    font-weight: 100;
+    font-style: italic;
+}
+@media(max-width:768px) {
+    #cv-header {
+        margin: 0 -15px;
+        background: #006e6d;
+        position: fixed;
+        width:100%;
+    }
+    #cv-header *, #cv-header>a{
+        color:#fff !important;
+    }
+}

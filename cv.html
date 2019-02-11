@@ -13,66 +13,72 @@
 	<body>
       <div  id="cv" class="container">
           <div class="row">
-              <div class="col-12 card w-100 mt-5">
-                  <section class="card-header px-3">
+              <div class="col-12 card w-100 mt-md-5 mb-0 mb-md-5">
+                  <section id="cv-header" class="card-header px-3 pt-3 ">
 
                       <h5 class="">Chanelle Adams</h5>
-                      <a href="mailto:contact.chanelleadams@gmail.com"></a>contact.chanelleadams@gmail.com
+                      <a href="mailto:contact.chanelleadams@gmail.com">contact.chanelleadams@gmail.com</a>
                   </section>
                  
-                  <div class="card-body d-flex flex-column text-right px-5">
+                  <div class="card-body d-flex flex-column text-right px-3 mt-5 mt-md-0 pt-5 pt-md-0">
                     
                     <p class="card-text text-right px-2">
-                        <h5 class="card-title w-100">Education</h5>
+                        <h5 class="card-title w-100 text-center text-md-right">Education</h5>
                       <div v-for="entry in education" class="education-container pt-3 px-2">
                         
-                        <div class="d-flex">
-                          <article class="mr-auto ">{{entry.gsx$date.$t}}</article> <span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> <span class="description">{{entry.gsx$description.$t}}</span>
+                        <div class="d-flex flex-column flex-md-row text-center text-md-right">
+                          <article class="mr-md-auto ">{{entry.gsx$date.$t}}</article> <span class="accolade-name mr-1 ">{{entry.gsx$title.$t}}</span> <span class="description">{{entry.gsx$description.$t}}</span>
                         </div>
-                        <p class="organization">{{entry.gsx$organization.$t}}</p>
+                        <p class="organization text-center text-md-right">{{entry.gsx$organization.$t}}</p>
                   
                       </div>
-                      <h5 class="card-title w-100 mt-5 px-2">Honors</h5>
+                      <h5 class="card-title w-100 mt-5 px-2 text-center text-md-right">Honors</h5>
                       <div v-for="entry in honors" class="honors-container pt-3 px-2">
-                          <div class="d-flex">
-                            <article class="mr-auto ">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> 
+                          <div class="d-flex flex-column flex-md-row text-center text-md-right">
+                            <article class="mr-md-auto ">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> 
                           </div>
-                          <p class="organization">{{entry.gsx$organization.$t}}</p>
+                          <p class="organization text-center text-md-right">{{entry.gsx$organization.$t}}</p>
                     
                         </div>
 
-                        <h5 class="card-title w-100 mt-5 px-2">Non-Fiction</h5>
+                        <h5 class="card-title w-100 mt-5 px-2 text-center text-md-right">Non-Fiction</h5>
                         <div v-for="entry in nonFiction" class="non-fiction-container  pt-2 px-2">
-                          <div class="d-flex pb-2">
-                            <article class="mr-auto ">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> for <a v-bind:href="entry.gsx$url.$t" target="_blank" class="organization ml-1">{{entry.gsx$organization.$t}}</a>
+                          <div class="d-flex pb-2 flex-column flex-md-row text-center text-md-right">
+                            <article class="mr-md-auto">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> <span class="d-none d-md-block">|</span> <a :href="entry.gsx$url.$t" target="_blank" class="organization ml-1">{{entry.gsx$organization.$t}}</a>
                           </div>
                     
                     
                         </div>
 
-                        <h5 class="card-title w-100 mt-5 px-2">Translation</h5>
+                        <h5 class="card-title w-100 mt-5 px-2 text-center text-md-right">Translation</h5>
                         <div v-for="entry in translation" class="translation-container pt-2 px-2">
-                          <div class="d-flex pb-2">
-                            <article class="mr-auto ">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> for <a v-bind:href="entry.gsx$url.$t" target="_blank" class="organization ml-1">{{entry.gsx$organization.$t}}</a>
+                          <div class="d-flex pb-2 flex-column flex-md-row text-center text-md-right">
+                            <article class="mr-md-auto ">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> <span class="d-none d-md-block">|</span> <a v-bind:href="entry.gsx$url.$t" target="_blank" class="organization ml-1">{{entry.gsx$organization.$t}}</a>
                           </div>
                     
                     
                         </div>
 
-                        <h5 class="card-title w-100 mt-5  px-2">Invited Talks</h5>
+                        <h5 class="card-title w-100 mt-5  px-2 text-center text-md-right">Invited Talks</h5>
                       <div v-for="entry in talks" class="talks-container pt-2 px-2">
-                          <div class="d-flex">
-                            <article class="mr-auto col-md-2 pl-0 text-left">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> 
+                          <div class="d-flex flex-column flex-md-row text-center text-md-right">
+                            <article class="mr-md-auto col-md-2 pl-0 text-md-left">{{entry.gsx$date.$t}}</article><a  :href="entry.gsx$url.$t" class="accolade-name mr-1">{{entry.gsx$title.$t}}</a> 
+                            
                           </div>
-                          <p class="description ">{{entry.gsx$description.$t}}</p><p class="organization">{{entry.gsx$organization.$t}}</p>
+                          <span class="description text-center text-md-right d-block d-md-inline"> {{entry.gsx$description.$t}}</span>
+                         <p class="organization text-center text-md-right">{{entry.gsx$organization.$t}}</p>
                     
                         </div>
 
-                        <h5 class="card-title w-100 mt-5 px-2 pt-2">Professional Experience</h5>
+                        <h5 class="card-title w-100 mt-5 px-2 pt-2 text-center text-md-right">Professional Experience</h5>
                         <div v-for="entry in professionalExperience" class="non-fiction-container pt-2 px-2">
-                          <div class="d-flex pb-2">
-                            <article class="mr-auto ">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}},</span> <a v-bind:href="entry.gsx$url.$t" target="_blank" class="organization ml-1">{{entry.gsx$organization.$t}}</a>
+                          <div class="d-flex pb-2 flex-column flex-md-row text-center text-md-right">
+                            <article class="mr-md-auto text-md-left">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}},</span> 
+                            <a v-if="entry.gsx$url.$t" :href="entry.gsx$url.$t" target="_blank" class="organization ml-1">{{entry.gsx$organization.$t}}</a>
+                            <div v-else :href="entry.gsx$url.$t" target="_blank" class="organization ml-1">{{entry.gsx$organization.$t}} </div>
+                            
                           </div>
+  
                     
                     
                         </div>
@@ -116,7 +122,7 @@ var cv = new Vue({
         currentPage: 'fetchData'
     },
  
-  created: function () {
+  created() {
     this.fetchData()
   },
    
