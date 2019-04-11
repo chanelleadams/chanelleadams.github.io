@@ -200,7 +200,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   font-family: "Karla";
 }
 nav ul {
-  list-style: lower-roman;
+  list-style: none;
 }
 
 nav ul > li a {
