@@ -195,8 +195,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .content nav {
-  display: flex;
-  justify-content: flex-end;
   font-family: "Karla";
 }
 nav ul {
