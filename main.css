@@ -377,6 +377,10 @@ nav ul>li a {
     margin-bottom: 4rem;
 }
 
+.hidden {
+    display: none !important;
+}
+
 #news img {
     display: block;
     max-width: 50% !important;
