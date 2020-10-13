@@ -275,6 +275,10 @@ nav ul>li a {
     .thesis-poster-container img {
         width: 100%;
     }
+    #news img,
+    #bio img {
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 992px) {
