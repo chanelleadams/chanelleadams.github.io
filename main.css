@@ -1,334 +1,390 @@
 a {
-  color: #000;
-}
-.collage a {
-  text-decoration: underline;
-}
-.collage a:hover {
-  text-decoration: none;
-}
-.sub-title {
-  font-family: "Karla";
-  margin-top: -1em;
-  text-align: center;
-}
-.issuu-embed-container {
-  position: relative;
-  padding-bottom: 56.25%; /* set the aspect ratio here as (height / width) * 100% */
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-}
-.flex {
-  display: flex !important;
-}
-.flex.close-up-copy {
-  flex-wrap: wrap;
-}
-.collage {
-  border: 2px solid #333;
-  padding: 8px;
-  margin: 10px 0;
+    color: #000;
 }
 
 .collage a {
-  color: #333 !important;
+    text-decoration: underline;
+}
+
+.collage a:hover {
+    text-decoration: none;
+}
+
+.sub-title {
+    font-family: "Karla";
+    margin-top: -1em;
+    text-align: center;
+}
+
+.issuu-embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* set the aspect ratio here as (height / width) * 100% */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.flex.close-up-copy {
+    flex-wrap: wrap;
+}
+
+.collage {
+    border: 2px solid #333;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+.collage a {
+    color: #333 !important;
 }
 
 .collage-container {
-  padding: 1.75em;
-  padding-top: 0;
-  display: flex;
-  flex-wrap: wrap;
+    padding: 1.75em;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .ih-Root-inner {
-  display: none !important;
+    display: none !important;
 }
+
 .col-2-flex {
-  display: flex;
-  align-items: stretch;
-  margin-bottom: 3em;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 3em;
 }
+
 body {
-  font-family: "Karla";
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ddcba4+100 */
-  background: #ffffff; /* Old browsers */
-
-  background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #ddcba4 166%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ddcba4',GradientType=0 ); /* IE6-9 */
-  min-height: 100vh;
+    font-family: "Karla";
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ddcba4+100 */
+    background: #ffffff;
+    /* Old browsers */
+    background: linear-gradient( to bottom, #ffffff 0%, #ddcba4 166%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ddcba4', GradientType=0);
+    /* IE6-9 */
+    min-height: 100vh;
 }
+
 .fa-twitter {
-  float: right;
-  margin-top: -1.25em;
-  margin-right: 40px;
-  color: transparent;
-  text-shadow: 3px 3px 3px rgba(136, 176, 75, 0.75);
+    float: right;
+    margin-top: -1.25em;
+    margin-right: 40px;
+    color: transparent;
+    text-shadow: 3px 3px 3px rgba(136, 176, 75, 0.75);
 }
+
 .cv-i {
-  float: right;
-  margin-top: -1.6em;
-  margin-right: 124px;
-  text-shadow: 3px 3px 3px rgba(136, 176, 75, 0.75);
-  color:transparent;
+    float: right;
+    margin-top: -1.6em;
+    margin-right: 124px;
+    text-shadow: 3px 3px 3px rgba(136, 176, 75, 0.75);
+    color: transparent;
 }
+
 .ex-link {
-  transition: all 0.33s;
-  text-decoration: underline;
-  opacity: 0.5;
+    transition: all 0.33s;
+    text-decoration: underline;
+    opacity: 0.5;
 }
+
 .ex-link:hover {
-  opacity: 1;
+    opacity: 1;
 }
-.fa-twitter:hover,.cv-i:hover {
-  color: #333;
+
+.fa-twitter:hover,
+.cv-i:hover {
+    color: #333;
 }
+
 .social {
-  float: right;
+    float: right;
 }
+
 .close-up-img img {
-  transition: all 0.67s;
+    transition: all 0.67s;
 }
+
 .overflow-hidden {
-  overflow: hidden;
+    overflow: hidden;
 }
+
 .pub-list {
-  list-style: none;
-  font-size: 1.2em;
-  margin-bottom: 1.5em;
-  padding-left: 0;
+    list-style: none;
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    padding-left: 0;
 }
+
 .pub-list li {
-  margin-bottom: 1.5em;
+    margin-bottom: 1.5em;
 }
+
 .close-up-img:hover img {
-  transform: scale(1.33);
+    transform: scale(1.33);
 }
+
 .social img {
-  width: 64px;
-  margin-top: 0vh;
-  margin-bottom: 5vh;
+    width: 64px;
+    margin-top: 0vh;
+    margin-bottom: 5vh;
 }
+
 a {
-  color: #000 !important;
+    color: #000 !important;
 }
+
 a.cv-link {
-  color: #f4512c !important;
-  font-size: 1.25em;
+    color: #f4512c !important;
+    font-size: 1.25em;
 }
+
 nav li {
-  margin: 1em 0;
+    margin: 1em 0;
 }
+
 .email-link {
-  font-size: 1.2em;
-  border: 1px solid #000;
-  border-radius: 15px;
-  font-size: 2em;
-  padding: 10px;
-  margin-top: 30px;
-  display: inline-block;
+    font-size: 1.2em;
+    border: 1px solid #000;
+    border-radius: 15px;
+    font-size: 2em;
+    padding: 10px;
+    margin-top: 30px;
+    display: inline-block;
 }
+
 #writing {
-  min-height: 40vh;
-  max-height: Calc(100vh - 200px);
-  background: rgba(255, 255, 255, 0.5);
-
-  box-shadow: 3px 11px 11px 0px rgba(136, 176, 75, .67);
-  font-family: "Cormorant";
-  padding-bottom: 3.5em;
-  overflow-y: auto;
-  font-size: 1.2em;
-  
-
-  line-height: 1.5;
-
-  border-bottom-width: 0;
-  margin-right: 25px;
-  border: 2px solid #333;
-  border-radius: 8px;
-
+    min-height: 40vh;
+    max-height: Calc(100vh - 200px);
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 3px 11px 11px 0px rgba(136, 176, 75, .67);
+    font-family: "Cormorant";
+    padding-bottom: 3.5em;
+    overflow-y: auto;
+    font-size: 1.2em;
+    line-height: 1.5;
+    border-bottom-width: 0;
+    margin-right: 25px;
+    border: 2px solid #333;
+    border-radius: 8px;
 }
+
 .main-hr {
-  margin-bottom: 3em;
+    margin-bottom: 3em;
 }
+
 .align-center {
-  align-self: center;
+    align-self: center;
 }
+
 #writing>div>.col-md-12 {
-  padding: 0;
+    padding: 0;
 }
-#writing > div {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 1em;
+
+#writing>div {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 1em;
 }
+
 #writing h2 {
-  font-family: "Karla";
-  margin-bottom: 1em;
-  font-size: 2em;
-  text-transform: uppercase;
-  margin-top: 0;
-  z-index: 9999;
-  border-bottom: 1px #333 solid;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,eeeeee+100 */
-background: rgb(255,255,255); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(238,238,238,.67) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(238,238,238,.67) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(238,238,238,.67) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
-  border-radius: 8px 8px 0 0;
+    font-family: "Karla";
+    margin-bottom: 1em;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-top: 0;
+    z-index: 9999;
+    border-bottom: 1px #333 solid;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,eeeeee+100 */
+    background: rgb(255, 255, 255);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(238, 238, 238, .67) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(238, 238, 238, .67) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(238, 238, 238, .67) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);
+    /* IE6-9 */
+    border-radius: 8px 8px 0 0;
 }
 
 #writing h5 {
-  font-size: 1.23em;
-  font-family: "Karla";
-  margin-top: -1.5em;
-  margin-bottom: 1em;
+    font-size: 1.23em;
+    font-family: "Karla";
+    margin-top: -1.5em;
+    margin-bottom: 1em;
 }
+
 .current,
 .content li a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .content nav {
-  font-family: "Karla";
-}
-nav ul {
-  list-style: none;
+    font-family: "Karla";
 }
 
-nav ul > li a {
-  text-align: justify;
-  font-size: 1.2em !important;
+nav ul {
+    list-style: none;
 }
+
+nav ul>li a {
+    text-align: justify;
+    font-size: 1.2em !important;
+}
+
 .typewrite,
 .main-name {
-  text-align: left;
-  margin-left: 40px;
-  
+    text-align: left;
+    margin-left: 40px;
 }
 
 .close-up-copy {
-  padding: 0 1em;
-  font-size: 1.333em;
+    padding: 0 1em;
+    font-size: 1.333em;
+}
 
-}
 .pnum {
-  position: absolute;
-  bottom: -6px;
-  right: 45px;
-  opacity: 0.5;
+    position: absolute;
+    bottom: -6px;
+    right: 45px;
+    opacity: 0.5;
 }
+
 .thesis-poster-container {
-  margin: 2.1em 0;
+    margin: 2.1em 0;
 }
+
 .col-2-flex .close-up-copy {
-  font-size: 1.333em;
-  font-family: "Karla";
+    font-size: 1.333em;
+    font-family: "Karla";
 }
+
 @media screen and (max-width: 768px) {
-  .thesis-poster-container {
-    width: 100% !important;
-    left: 0;
-  }
-  .thesis-poster-container img {
-    width: 100%;
-  }
+    .thesis-poster-container {
+        width: 100% !important;
+        left: 0;
+    }
+    .thesis-poster-container img {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 992px) {
-  .typewrite {
-    padding-top:120px;
-  }
-  .close-up-copy {
-    font-size: 1.5em;
-    margin-top: 0.5em;
-  }
-  .collage h3 {
-    font-size: 1.2em;
-    margin: 1em 0;
-  }
-  .collage {
-    border-width: 0;
-    padding: 0;
-  }
-  .collage-container {
-    padding: 0;
-    display: block;
-  }
-  .pnum {
-    display: hidden;
-  }
-  .thesis-poster-container {
-    width: 100% !important;
-    left: 0 !important;
-  }
-  .thesis-poster-container img {
-    width: 100%;
-  }
-  body {
-    background: linear-gradient(
-      to bottom,
-      #ffffff 0%,
-      #ddcba4 250%
-    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ddcba4',GradientType=0 ); /* IE6-9 */
-  }
-  .col-2-flex {
-    display: block;
-  }
+    .typewrite {
+        padding-top: 120px;
+    }
+    .close-up-copy {
+        font-size: 1.5em;
+        margin-top: 0.5em;
+    }
+    .collage h3 {
+        font-size: 1.2em;
+        margin: 1em 0;
+    }
+    .collage {
+        border-width: 0;
+        padding: 0;
+    }
+    .collage-container {
+        padding: 0;
+        display: block;
+    }
+    .pnum {
+        display: hidden;
+    }
+    .thesis-poster-container {
+        width: 100% !important;
+        left: 0 !important;
+    }
+    .thesis-poster-container img {
+        width: 100%;
+    }
+    body {
+        background: linear-gradient( to bottom, #ffffff 0%, #ddcba4 250%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ddcba4', GradientType=0);
+        /* IE6-9 */
+    }
+    .col-2-flex {
+        display: block;
+    }
+    .close-up-img {
+        padding: 2em 0;
+    }
+    nav li {
+        margin: 0 0.66em !important;
+    }
+    nav ul .current {
+        text-decoration: underline;
+    }
+    #writing {
+        font-size: 2.33em;
+        max-height: Calc(100vh - 512px);
+        box-shadow: none;
+        padding: 0;
+        background: transparent;
+        border-right-width: 0;
+        border-left-width: 0;
+        border-bottom-width: 0;
+        margin-right: 0;
+    }
+    .typewrite {
+        font-size: 2em;
+        margin-left: 0;
+    }
+    .main-name {
+        text-align: center;
+        font-size: 4em;
+        margin-left: 0;
+    }
+    #writing h2 {
+        display: hidden;
+        font-size: 1.8em;
+    }
+    .content nav {
+        font-size: 2.5em;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    .content nav ul>li {
+        display: inline-block;
+        margin: 6px;
+    }
+    .content nav ul {
+        padding: 0;
+    }
+}
 
-  .close-up-img {
-    padding: 2em 0;
-  }
-  nav li {
-    margin: 0 0.66em !important;
-  }
-  nav ul .current {
+#news>*>.close-up-copy::after {
+    content: " ";
+    display: block;
+    background: url(img/dot.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin: 3rem auto;
+    margin-bottom: 4rem;
+}
+
+#news img {
+    display: block;
+    max-width: 50% !important;
+    border: 4px solid #ddcba4;
+    box-shadow: none !important;
+}
+
+#news a,
+#bio a {
     text-decoration: underline;
-  }
-  #writing {
-    font-size: 2.33em;
-    max-height: Calc(100vh - 512px);
-    box-shadow: none;
-    padding: 0;
-    background: transparent;
-    border-right-width: 0;
-    border-left-width: 0;
-    border-bottom-width: 0;
-    margin-right: 0;
- 
-  }
-  .typewrite {
- 
-    font-size: 2em;
-    margin-left: 0;
-  }
-  .main-name {
-    text-align: center;
-    font-size: 4em;
-    margin-left: 0;
-  }
-  #writing h2 {
-    display: hidden;
-    font-size: 1.8em;
-  }
-  .content nav {
-    font-size: 2.5em;
-    justify-content: center;
-    text-align: center;
-
-    margin-bottom: 1em;
-  }
-  .content nav ul > li {
-    display: inline-block;
-    margin: 6px;
-  }
-  .content nav ul {
-    padding: 0;
-  }
 }
