@@ -65,7 +65,7 @@ body {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ddcba4+100 */
     background: #ffffff;
     /* Old browsers */
-    background: linear-gradient( to bottom, #ffffff 0%, #ddcba4 166%);
+    background: linear-gradient( to bottom, #ffffff 0%, #ddcba4 400%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ddcba4', GradientType=0);
     /* IE6-9 */
