@@ -33,6 +33,7 @@
         <div class="col-12 card w-100 mt-md-5 mb-0 mb-md-5">
           <section id="cv-header" class="card-header px-3 pt-3">
             <h5 class="">Chanelle Adams</h5>
+
             <a
               class="text-pink-800"
               href="mailto:contact.chanelleadams@gmail.com"
@@ -51,51 +52,39 @@
               space-y-12
             "
           >
-            <div v-for="entry in entries">
-              <section class="space-y-2">
-                <div
-                  class="
-                    border-2 border-pink-800
-                    inline-block
-                    color
-                    text-pink-800
-                    px-3
-                    mt-3
-                    rounded
-                  "
-                >
-                  {{entry.Category}}
+            <div class="space-y-6" v-for="entry in entries">
+              <section class="space-y-12" >
+                 <div class="space-y-6" v-for="i in cats">
+                    <h2 class="text-2xl uppercase">{{i}}</h2>
+                    
+                    <div class="space-y-2" v-for="row in entriesFormatted[i]">
+                      <a :href="row.URL" class="text-pink-900 font-bold" v-if="row.URL">{{row.Title}} {{row.Organization}}</a>
+                      <span class="font-bold" v-else >{{row.Title}} | {{row.Organization}}</span>
+                      <p>{{row.Description}}</p>
+                      <p class="italic">{{row.Date}}</p>
+                     
+                      
+              
+                    </span>
+                    </div>
+                  </div>
+                 
                 </div>
-                <h2 class="text-2xl">
-                  {{entry.Title}} | {{entry.Organization}}
-                </h2>
-                <div
-                  class="
-                    text-xl
-                    bg-gray-400
-                    text-white
-                    inline-block
-                    px-3
-                    rounded
-                  "
-                >
-                  {{entry.Description}}
-                </div>
-                <div>{{entry.Date}}</div>
               </section>
+              
             </div>
           </div>
         </div>
       </div>
     </div>
-    <section></section>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
   </body>
 </html>
 
 <script>
-  var sheetUrl =
+  const sheetUrl =
     "https://opensheet.vercel.app/1kwnCvmyaz4qPQro5WHX0AkxUB_CbVsrS-Kf5j3DD7No/Sheet1";
 
   var cv = new Vue({
@@ -103,6 +92,30 @@
 
     data: {
       entries: [],
+      entriesFormatted: {
+        Education: [],
+        Residencies: [],
+        "Awards and Grants": [],
+        Writing: [],
+        Performance: [],
+        "Professional Experience": [],
+        Teaching: [],
+        "Academic Panels": [],
+        "Invited Talks": [],
+        Translation: [],
+      },
+      cats: [
+        "Education",
+        "Residencies",
+        "Awards and Grants",
+        "Writing",
+        "Performance",
+        "Professional Experience",
+        "Teaching",
+        "Academic Panels",
+        "Invited Talks",
+        "Translation",
+      ],
     },
 
     watch: {
@@ -111,15 +124,25 @@
 
     created() {
       this.fetchData();
+      console.log(this.entriesFormatted);
     },
 
     methods: {
       fetchData: function () {
+        const vm = this;
         fetch(sheetUrl)
           .then((res) => res.json())
           .then((data) => {
             data.forEach((row) => {
               this.entries.push(row);
+            });
+          })
+          .then(function () {
+            vm.cats.forEach((category) => {
+              vm.entriesFormatted[category] = vm.entries.filter((entry) => {
+                // console.log(entry.Category);
+                return entry.Category == category;
+              });
             });
           });
       },
