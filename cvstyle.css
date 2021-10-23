@@ -1,75 +1,78 @@
-body, html, * {
-    font-family: "Lora"
+body,
+html,
+* {
+  font-family: "Lora";
 }
 body {
-    background: rgba(239,235,233, .34);
+  background: rgba(239, 235, 233, 0.34);
 }
 .card-header {
-    background: transparent;
-    font-size:.9rem;
-  
+  background: transparent;
+  font-size: 0.9rem;
 }
 
-.card-header a, .card-header,.card-header h5,.card-title {
-    font-family: "Karla" !important;
-    text-transform: uppercase;
-
+.card-header a,
+.card-header,
+.card-header h5,
+.card-title {
+  font-family: "Karla" !important;
+  text-transform: uppercase;
 }
 .card-header h5 {
-    font-size:2.1rem;
+  font-size: 2.1rem;
 }
 .card-title {
-    font-size:1.75rem;
+  font-size: 1.75rem;
 }
 .accolade-name {
-    font-weight: 700;
-  
+  font-weight: 700;
 }
 .organization {
-    font-family: "Lora";
-
+  font-family: "Lora";
 }
 h5.card-title:first-of-type {
-    margin-top:0 !important;
-}
-a {
-    color: #FE840E !important;
-}
-.honors-container,.education-container,.non-fiction-container,.translation-container,.talks-container {
-    transition:background 333ms;
-    border-radius: 10px;
-    background:rgba(239,235,233, 0);
+  margin-top: 0 !important;
 }
 
-.honors-container:hover,.education-container:hover,.non-fiction-container:hover,.translation-container:hover, .talks-container:hover {
-
-    background:rgba(239,235,233, .625);
-
+.honors-container,
+.education-container,
+.non-fiction-container,
+.translation-container,
+.talks-container {
+  transition: background 333ms;
+  border-radius: 10px;
+  background: rgba(239, 235, 233, 0);
 }
 
+.honors-container:hover,
+.education-container:hover,
+.non-fiction-container:hover,
+.translation-container:hover,
+.talks-container:hover {
+  background: rgba(239, 235, 233, 0.625);
+}
 
 .description {
-    font-weight: 100;
-    font-style: italic;
+  font-weight: 100;
+  font-style: italic;
 }
-@media(max-width:768px) {
-    .card {
-        border-radius: 0;
-    }
-    #cv-header {
-    
-        margin: 0 -15px;
-        background: #FE840E;
-        position: fixed;
-        width:100%;
-        border-radius: 0;
-        z-index: 999;
-    }
-    #cv-header * {
-
-        border-radius: 0;
-    }
-    #cv-header *, #cv-header>a{
-        color:#fff !important;
-    }
+@media (max-width: 768px) {
+  .card {
+    border-radius: 0;
+  }
+  #cv-header {
+    margin: 0 -15px;
+    background: #fe840e;
+    position: fixed;
+    width: 100%;
+    border-radius: 0;
+    z-index: 999;
+  }
+  #cv-header * {
+    border-radius: 0;
+  }
+  #cv-header *,
+  #cv-header > a {
+    color: #fff !important;
+  }
 }

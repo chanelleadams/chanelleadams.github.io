@@ -1,180 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400i" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="cvstyle.css">
-    
-		<title>Chanelle Adams</title>
-	</head>
-	<body>
-      <div  id="cv" class="container">
-          <div class="row">
-              <div class="col-12 card w-100 mt-md-5 mb-0 mb-md-5">
-                  <section id="cv-header" class="card-header px-3 pt-3 ">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla:400,400i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700,400i"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cvstyle.css" />
 
-                      <h5 class="">Chanelle Adams</h5>
-                      <a href="mailto:contact.chanelleadams@gmail.com">contact.chanelleadams@gmail.com</a>
-                  </section>
-                 
-                  <div class="card-body d-flex flex-column text-right px-3 mt-5 mt-md-0 pt-5 pt-md-0">
-                    
-                    <p class="card-text text-right px-2">
-                        <h5 class="card-title w-100 text-center text-md-right">Education</h5>
-                      <div v-for="entry in education" class="education-container pt-3 px-2">
-                        
-                        <div class="d-flex flex-column flex-md-row text-center text-md-right">
-                          <article class="mr-md-auto ">{{entry.gsx$date.$t}}</article> <span class="accolade-name mr-1 ">{{entry.gsx$title.$t}}</span> <span class="description">{{entry.gsx$description.$t}}</span>
-                        </div>
-                        <p class="organization text-center text-md-right">{{entry.gsx$organization.$t}}</p>
-                  
-                      </div>
-                      <h5 class="card-title w-100 mt-5 px-2 text-center text-md-right">Honors</h5>
-                      <div v-for="entry in honors" class="honors-container pt-3 px-2">
-                          <div class="d-flex flex-column flex-md-row text-center text-md-right">
-                            <article class="mr-md-auto ">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> 
-                          </div>
-                          <p class="organization text-center text-md-right">{{entry.gsx$organization.$t}}</p>
-                    
-                        </div>
+    <title>Chanelle Adams</title>
+  </head>
 
-                        <h5 class="card-title w-100 mt-5 px-2 text-center text-md-right">Non-Fiction</h5>
-                        <div v-for="entry in nonFiction" class="non-fiction-container  pt-2 px-2">
-                          <div class="d-flex pb-2 flex-column flex-md-row text-center text-md-right">
-                            <article class="mr-md-auto">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> <span class="d-none d-md-block">|</span> <a :href="entry.gsx$url.$t" target="_blank" class="organization ml-1">{{entry.gsx$organization.$t}}</a>
-                          </div>
-                    
-                    
-                        </div>
+  <body>
+    <div id="cv" class="container">
+      <div class="row">
+        <div class="col-12 card w-100 mt-md-5 mb-0 mb-md-5">
+          <section id="cv-header" class="card-header px-3 pt-3">
+            <h5 class="">Chanelle Adams</h5>
+            <a
+              class="text-pink-800"
+              href="mailto:contact.chanelleadams@gmail.com"
+              >contact.chanelleadams@gmail.com</a
+            >
+          </section>
 
-                        <h5 class="card-title w-100 mt-5 px-2 text-center text-md-right">Translation</h5>
-                        <div v-for="entry in translation" class="translation-container pt-2 px-2">
-                          <div class="d-flex pb-2 flex-column flex-md-row text-center text-md-right">
-                            <article class="mr-md-auto ">{{entry.gsx$date.$t}}</article><span class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> <span class="d-none d-md-block">|</span> <a v-bind:href="entry.gsx$url.$t" target="_blank" class="organization ml-1">{{entry.gsx$organization.$t}}</a>
-                          </div>
-                    
-                    
-                        </div>
-
-                        <h5 class="card-title w-100 mt-5  px-2 text-center text-md-right">Invited Talks</h5>
-                      <div v-for="entry in talks" class="talks-container pt-2 px-2">
-                          <div class="d-flex flex-column flex-md-row text-center text-md-right">
-                            <article class="mr-md-auto col-md-2 pl-0 text-md-left">{{entry.gsx$date.$t}}</article><a  :href="entry.gsx$url.$t" class="accolade-name mr-1">{{entry.gsx$title.$t}}</a> 
-                            
-                          </div>
-                          <span class="description text-center text-md-right d-block d-md-inline"> {{entry.gsx$description.$t}}</span>
-                         <p class="organization text-center text-md-right">{{entry.gsx$organization.$t}}</p>
-                    
-                        </div>
-
-                        <h5 class="card-title w-100 mt-5 px-2 pt-2 text-center text-md-right">Professional Experience</h5>
-                        <div v-for="entry in professionalExperience" class="talks-container pt-2 px-2">
-                          <div class="d-flex flex-column flex-md-row text-center text-md-right">
-                            <article class="mr-md-auto col-md-2 pl-0 text-md-left">{{entry.gsx$date.$t}}</article><span  class="accolade-name mr-1">{{entry.gsx$title.$t}}</span> 
-                            
-                          </div>
-                          <span class="description text-center text-md-right d-block d-md-inline"> {{entry.gsx$description.$t}}</span>
-                         <p class="organization text-center text-md-right">{{entry.gsx$organization.$t}}</p>
-                    
-                        </div>
-
-  
-                    
-                    
-                        </div>
-
-                     
-                    </p>
-      
-                  </div>
-                  
+          <div
+            class="
+              card-body
+              d-flex
+              flex-column
+              px-3
+              mt-5 mt-md-0
+              pt-5 pt-md-0
+              space-y-12
+            "
+          >
+            <div v-for="entry in entries">
+              <section class="space-y-2">
+                <div
+                  class="
+                    border-2 border-pink-800
+                    inline-block
+                    color
+                    text-pink-800
+                    px-3
+                    mt-3
+                    rounded
+                  "
+                >
+                  {{entry.Category}}
                 </div>
+                <h2 class="text-2xl">
+                  {{entry.Title}} | {{entry.Organization}}
+                </h2>
+                <div
+                  class="
+                    text-xl
+                    bg-gray-400
+                    text-white
+                    inline-block
+                    px-3
+                    rounded
+                  "
+                >
+                  {{entry.Description}}
+                </div>
+                <div>{{entry.Date}}</div>
+              </section>
+            </div>
           </div>
         </div>
-		<section>
-
-
-
-    </section>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
-	</body>
-
+      </div>
+    </div>
+    <section></section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+  </body>
 </html>
 
 <script>
-var sheetUrl = 'https://spreadsheets.google.com/feeds/list/1RuGTg0EbD92Ij8-ZbhiQ36U22x-5oN4WrAKk23v7SMk/1/public/values?alt=json'
+  var sheetUrl =
+    "https://opensheet.vercel.app/1kwnCvmyaz4qPQro5WHX0AkxUB_CbVsrS-Kf5j3DD7No/Sheet1";
 
-var cv = new Vue({
-  el: '#cv',
-   
-  data: {
-        entries: null,
-        education: [],
-        honors:[],
-        nonFiction:[],
-        translation:[],
-        talks:[],
-        professionalExperience:[]
+  var cv = new Vue({
+    el: "#cv",
+
+    data: {
+      entries: [],
     },
-   
-  watch: {
-        currentPage: 'fetchData'
+
+    watch: {
+      currentPage: "fetchData",
     },
- 
-  created() {
-    this.fetchData()
-  },
-   
-  methods: {
-    fetchData: function () {
-      var xhr = new XMLHttpRequest()
-      var self = this
-      xhr.open('GET', sheetUrl )
-      xhr.onload = function () {        
-        self.entries = JSON.parse(xhr.responseText)
 
-        self.entries = self.entries.feed.entry  
-
-        //populate data arrays
-        self.entries.forEach(element => {
-          console.log(element.gsx$category.$t)
-          if (element.gsx$category.$t.toLowerCase().trim() == "education") {
-            self.education.push(element)
-    
-          }
-          if (element.gsx$category.$t.toLowerCase().trim() == "honors") {
-            self.honors.push(element)
-    
-          }
-          if (element.gsx$category.$t == "Non-Fiction") {
-            self.nonFiction.push(element)
-    
-          }
-          if (element.gsx$category.$t.toLowerCase().trim() == "translation") {
-            self.translation.push(element)
-    
-          }
-          if (element.gsx$category.$t.toLowerCase().trim() == "talks") {
-            self.talks.push(element)
-    
-          }
-          if (element.gsx$category.$t.toLowerCase().trim() == "professional") {
-            self.professionalExperience.push(element)
-    
-          }
-       
-        });
-      }
-      xhr.send()
+    created() {
+      this.fetchData();
     },
-//functions
- 
-  },  
-   
-})
 
+    methods: {
+      fetchData: function () {
+        fetch(sheetUrl)
+          .then((res) => res.json())
+          .then((data) => {
+            data.forEach((row) => {
+              this.entries.push(row);
+            });
+          });
+      },
+    },
+  });
 </script>
