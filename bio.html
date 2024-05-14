@@ -21,13 +21,17 @@
     <link href="https://fonts.googleapis.com/css?family=Karla:400,400i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="main.css" rel="stylesheet">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 </head>
 <style>
 
@@ -75,15 +79,30 @@
                         </div>
                         <div class="col-md-12 align-center">
 
-                          <p class="close-up-copy">Chanelle Adams is a researcher, writer, and artist currently based in Switzerland. She is a graduate of Brown University, the École des hautes études en sciences sociales, and a Fulbright scholar. At present, she is a doctoral student of geography at the University of Lausanne. Her dissertation focuses on how heightened demand for natural wellness products during the pandemic has influenced the livelihoods and practices of essential oil producers in the highlands of Madagascar.</p>
+                            <p class="close-up-copy">Chanelle Adams is a researcher, writer, and artist currently based
+                                in Switzerland. She is a graduate of Brown University, the École des hautes études en
+                                sciences sociales, and a Fulbright scholar. At present, she is a doctoral student of
+                                geography at the University of Lausanne. Her dissertation focuses on how heightened
+                                demand for natural wellness products during the pandemic has influenced the livelihoods
+                                and practices of essential oil producers in the highlands of Madagascar.</p>
 
-<p class="close-up-copy"><em>Earthly Delights</em>, her sold-out zine co-edited with Danielle Wu about botanical culture, was published by Tiger Strikes Asteroid in Los Angeles. Her writing on history, botany, healing, and the supernatural has been published by The Drift, e-flux, Adi Magazine, and the Canadian Centre for Architecture. She also regularly translates for The Funambulist.</p>
+                            <p class="close-up-copy"><em>Earthly Delights</em>, her sold-out zine co-edited with
+                                Danielle Wu about botanical culture, was published by Tiger Strikes Asteroid in Los
+                                Angeles. Her writing on history, botany, healing, and the supernatural has been
+                                published by The Drift, e-flux, Adi Magazine, and the Canadian Centre for Architecture.
+                                She also regularly translates for The Funambulist.</p>
 
-<p class="close-up-copy">Her ghost tour performance series invites various publics to practice bearing witness to the connected spectres of ecocide and colonialism. These meditative walks have taken place in gardens, parks, and museums of natural history in Marseille and Antananarivo, as well as part of the Kampnagel International Summer Festival in Hamburg, ICA Live Art Festival in Cape Town, and Les Urbaines in Lausanne.</p>
+                            <p class="close-up-copy">Her ghost tour performance series invites various publics to
+                                practice bearing witness to the connected spectres of ecocide and colonialism. These
+                                meditative walks have taken place in gardens, parks, and museums of natural history in
+                                Marseille and Antananarivo, as well as part of the Kampnagel International Summer
+                                Festival in Hamburg, ICA Live Art Festival in Cape Town, and Les Urbaines in Lausanne.
+                            </p>
 
 
                         </div>
-                        <div class=" hidden col-md-4 col-xs-8 col-xs-push-2 col-md-push-0 align-center close-up-img overflow-hidden">
+                        <div
+                            class=" hidden col-md-4 col-xs-8 col-xs-push-2 col-md-push-0 align-center close-up-img overflow-hidden">
                             <img class="img-responsive" src="img/chanelle.jpg" alt="">
 
                         </div>
@@ -104,7 +123,7 @@
 
     <script type="text/javascript">
         //made by vipul mirajkar thevipulm.appspot.com
-        var TxtType = function(el, toRotate, period) {
+        var TxtType = function (el, toRotate, period) {
             this.toRotate = toRotate;
             this.el = el;
             this.loopNum = 0;
@@ -114,7 +133,7 @@
             this.isDeleting = false;
         };
 
-        TxtType.prototype.tick = function() {
+        TxtType.prototype.tick = function () {
             var i = this.loopNum % this.toRotate.length;
             var fullTxt = this.toRotate[i];
 
@@ -143,7 +162,7 @@
                 delta = 500;
             }
 
-            var tOut = setTimeout(function() {
+            var tOut = setTimeout(function () {
                 that.tick();
             }, delta);
 
@@ -155,7 +174,7 @@
 
         };
 
-        window.onload = function() {
+        window.onload = function () {
             var elements = document.getElementsByClassName('typewrite');
             for (var i = 0; i < elements.length; i++) {
                 var toRotate = elements[i].getAttribute('data-type');
